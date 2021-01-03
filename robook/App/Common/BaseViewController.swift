@@ -40,7 +40,7 @@ class BaseViewController: UIViewController {
         }
       
       // move the root view up by the distance of keyboard height
-        self.view.frame.origin.y = 0 - keyboardSize.height / 1.2
+        self.view.frame.origin.y = 0 - keyboardSize.height / 4
     }
     
     @objc func keyboardWillHide(notification: NSNotification) {

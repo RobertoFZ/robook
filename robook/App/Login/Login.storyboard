@@ -22,14 +22,49 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hPn-wz-qs2">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="852"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Login" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CeN-Hr-812">
-                                                <rect key="frame" x="186" y="415" width="42" height="21"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="4i8-xV-3jM">
+                                                <rect key="frame" x="20" y="50" width="374" height="308"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HhT-29-iXv">
+                                                        <rect key="frame" x="0.0" y="0.0" width="374" height="150"/>
+                                                        <subviews>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="tTm-Kz-ema">
+                                                                <rect key="frame" x="0.0" y="0.0" width="374" height="150"/>
+                                                            </imageView>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="150" id="69a-kj-F35"/>
+                                                            <constraint firstAttribute="trailing" secondItem="tTm-Kz-ema" secondAttribute="trailing" id="I7G-om-zzS"/>
+                                                            <constraint firstAttribute="bottom" secondItem="tTm-Kz-ema" secondAttribute="bottom" id="U3T-M4-Crz"/>
+                                                            <constraint firstItem="tTm-Kz-ema" firstAttribute="top" secondItem="HhT-29-iXv" secondAttribute="top" id="pX2-Si-zIZ"/>
+                                                            <constraint firstItem="tTm-Kz-ema" firstAttribute="leading" secondItem="HhT-29-iXv" secondAttribute="leading" id="zmf-7I-moD"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Correo electrónico" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TLE-5u-gXe">
+                                                        <rect key="frame" x="0.0" y="170" width="374" height="34"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="emailAddress" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="email"/>
+                                                    </textField>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Contraseña" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="E2y-2x-vSr">
+                                                        <rect key="frame" x="0.0" y="224" width="374" height="34"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="password"/>
+                                                    </textField>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HPs-4I-Zq5">
+                                                        <rect key="frame" x="0.0" y="278" width="374" height="30"/>
+                                                        <state key="normal" title="Iniciar sesión"/>
+                                                        <connections>
+                                                            <action selector="doLogin:" destination="SFp-BJ-2WJ" eventType="touchUpInside" id="5LM-mo-dMJ"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
                                         </subviews>
+                                        <constraints>
+                                            <constraint firstItem="4i8-xV-3jM" firstAttribute="leading" secondItem="hPn-wz-qs2" secondAttribute="leading" constant="20" id="YKO-3d-qba"/>
+                                            <constraint firstItem="4i8-xV-3jM" firstAttribute="top" secondItem="hPn-wz-qs2" secondAttribute="top" constant="50" id="hOO-bI-MpQ"/>
+                                            <constraint firstAttribute="trailing" secondItem="4i8-xV-3jM" secondAttribute="trailing" constant="20" id="xMO-TZ-iTP"/>
+                                        </constraints>
                                     </view>
                                 </subviews>
                                 <constraints>
@@ -58,6 +93,13 @@
                             <constraint firstItem="zfs-Wf-yCT" firstAttribute="top" secondItem="Pz3-l7-oqL" secondAttribute="top" id="mLz-xA-yWF"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="emailField" destination="TLE-5u-gXe" id="df0-CS-pVW"/>
+                        <outlet property="loginButton" destination="HPs-4I-Zq5" id="6oV-G6-UUP"/>
+                        <outlet property="passwordField" destination="E2y-2x-vSr" id="OUv-ZA-pOO"/>
+                        <outlet property="scrollView" destination="zfs-Wf-yCT" id="7Lp-sP-Ut1"/>
+                        <outlet property="stackView" destination="4i8-xV-3jM" id="wrC-fO-5CG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mb8-fG-nX7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -65,6 +107,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Logo" width="250" height="250"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

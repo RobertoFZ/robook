@@ -13,12 +13,12 @@ class LoginViewController: BaseViewController, LoginViewDelegate {
     
     @IBOutlet weak var emailField: UITextField! {
        didSet {
-        emailField.styleInput("Correo electrónico")
+        //emailField.styleInput("Correo electrónico")
        }
     }
     @IBOutlet weak var passwordField: UITextField! {
        didSet {
-        passwordField.styleInput("Contraseña")
+        //passwordField.styleInput("Contraseña")
        }
     }
     @IBOutlet weak var loginButton: UIButton!;
