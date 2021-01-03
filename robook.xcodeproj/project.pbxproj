@@ -3,18 +3,33 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		5380564425A263170064CA75 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5380564325A263170064CA75 /* AppDelegate.swift */; };
 		5380564625A263170064CA75 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5380564525A263170064CA75 /* SceneDelegate.swift */; };
-		5380564825A263170064CA75 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5380564725A263170064CA75 /* ViewController.swift */; };
-		5380564B25A263170064CA75 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5380564925A263170064CA75 /* Main.storyboard */; };
 		5380564D25A2631A0064CA75 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5380564C25A2631A0064CA75 /* Assets.xcassets */; };
 		5380565025A2631A0064CA75 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5380564E25A2631A0064CA75 /* LaunchScreen.storyboard */; };
 		5380565B25A2631B0064CA75 /* robookTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5380565A25A2631B0064CA75 /* robookTests.swift */; };
 		5380566625A2631B0064CA75 /* robookUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5380566525A2631B0064CA75 /* robookUITests.swift */; };
+		5380568625A264060064CA75 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5380568525A264060064CA75 /* LoginViewController.swift */; };
+		5380568B25A2640E0064CA75 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5380568A25A2640E0064CA75 /* LoginPresenter.swift */; };
+		5380569025A264160064CA75 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5380568F25A264160064CA75 /* Login.storyboard */; };
+		5380569625A265260064CA75 /* UserDefaultsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5380569525A265260064CA75 /* UserDefaultsManager.swift */; };
+		5380569C25A265530064CA75 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5380569B25A265530064CA75 /* User.swift */; };
+		538056A125A265990064CA75 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 538056A025A265990064CA75 /* AppConstants.swift */; };
+		538056A725A265FF0064CA75 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 538056A625A265FF0064CA75 /* Extensions.swift */; };
+		538056B725A2664F0064CA75 /* UINavigationBarGradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 538056B625A2664F0064CA75 /* UINavigationBarGradientView.swift */; };
+		538056C425A267260064CA75 /* NavigationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 538056C325A267260064CA75 /* NavigationHelper.swift */; };
+		538056CC25A268000064CA75 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 538056CB25A268000064CA75 /* BaseViewController.swift */; };
+		538056D125A268A10064CA75 /* BaseViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 538056D025A268A10064CA75 /* BaseViewDelegate.swift */; };
+		538056D625A268C60064CA75 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 538056D525A268C60064CA75 /* Validation.swift */; };
+		538056DB25A268F00064CA75 /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 538056DA25A268F00064CA75 /* LoginService.swift */; };
+		538056E025A269380064CA75 /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 538056DF25A269380064CA75 /* APIConstants.swift */; };
+		8B74E22309BB73409CA41D35 /* Pods_robookTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BABC236BDA6CA31C24984653 /* Pods_robookTests.framework */; };
+		B3548361BD040B7B098CAEC5 /* Pods_robook_robookUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FFDB6A43A207422F6173286 /* Pods_robook_robookUITests.framework */; };
+		F153C03E829DFF80EC8BD342 /* Pods_robook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B769112CC425943F96E98AAA /* Pods_robook.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,8 +53,6 @@
 		5380564025A263170064CA75 /* robook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = robook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5380564325A263170064CA75 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5380564525A263170064CA75 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		5380564725A263170064CA75 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		5380564A25A263170064CA75 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5380564C25A2631A0064CA75 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5380564F25A2631A0064CA75 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5380565125A2631A0064CA75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +62,29 @@
 		5380566125A2631B0064CA75 /* robookUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = robookUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5380566525A2631B0064CA75 /* robookUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = robookUITests.swift; sourceTree = "<group>"; };
 		5380566725A2631B0064CA75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5380568525A264060064CA75 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		5380568A25A2640E0064CA75 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
+		5380568F25A264160064CA75 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		5380569525A265260064CA75 /* UserDefaultsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsManager.swift; sourceTree = "<group>"; };
+		5380569B25A265530064CA75 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		538056A025A265990064CA75 /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
+		538056A625A265FF0064CA75 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		538056B625A2664F0064CA75 /* UINavigationBarGradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UINavigationBarGradientView.swift; sourceTree = "<group>"; };
+		538056C325A267260064CA75 /* NavigationHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationHelper.swift; sourceTree = "<group>"; };
+		538056CB25A268000064CA75 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		538056D025A268A10064CA75 /* BaseViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewDelegate.swift; sourceTree = "<group>"; };
+		538056D525A268C60064CA75 /* Validation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validation.swift; sourceTree = "<group>"; };
+		538056DA25A268F00064CA75 /* LoginService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginService.swift; sourceTree = "<group>"; };
+		538056DF25A269380064CA75 /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
+		76CA43C020E85EA14F7F5D23 /* Pods-robookTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-robookTests.debug.xcconfig"; path = "Target Support Files/Pods-robookTests/Pods-robookTests.debug.xcconfig"; sourceTree = "<group>"; };
+		8688816A0406EB6A6BB2BDAC /* Pods-robookTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-robookTests.release.xcconfig"; path = "Target Support Files/Pods-robookTests/Pods-robookTests.release.xcconfig"; sourceTree = "<group>"; };
+		9FFDB6A43A207422F6173286 /* Pods_robook_robookUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_robook_robookUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B760835A21538255B9D9F3E5 /* Pods-robook-robookUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-robook-robookUITests.release.xcconfig"; path = "Target Support Files/Pods-robook-robookUITests/Pods-robook-robookUITests.release.xcconfig"; sourceTree = "<group>"; };
+		B769112CC425943F96E98AAA /* Pods_robook.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_robook.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BABC236BDA6CA31C24984653 /* Pods_robookTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_robookTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D33947FDBE0A971E172ADAE4 /* Pods-robook.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-robook.release.xcconfig"; path = "Target Support Files/Pods-robook/Pods-robook.release.xcconfig"; sourceTree = "<group>"; };
+		DE801AC98DC0955035075612 /* Pods-robook.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-robook.debug.xcconfig"; path = "Target Support Files/Pods-robook/Pods-robook.debug.xcconfig"; sourceTree = "<group>"; };
+		E2FB5A73B26CBF223156EF86 /* Pods-robook-robookUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-robook-robookUITests.debug.xcconfig"; path = "Target Support Files/Pods-robook-robookUITests/Pods-robook-robookUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F153C03E829DFF80EC8BD342 /* Pods_robook.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +100,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B74E22309BB73409CA41D35 /* Pods_robookTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +108,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3548361BD040B7B098CAEC5 /* Pods_robook_robookUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +122,8 @@
 				5380565925A2631A0064CA75 /* robookTests */,
 				5380566425A2631B0064CA75 /* robookUITests */,
 				5380564125A263170064CA75 /* Products */,
+				7F8EFC5BFD68402F76E1023E /* Pods */,
+				C5159406F41F2CC185A854A9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,10 +140,9 @@
 		5380564225A263170064CA75 /* robook */ = {
 			isa = PBXGroup;
 			children = (
+				5380568025A263E30064CA75 /* App */,
 				5380564325A263170064CA75 /* AppDelegate.swift */,
 				5380564525A263170064CA75 /* SceneDelegate.swift */,
-				5380564725A263170064CA75 /* ViewController.swift */,
-				5380564925A263170064CA75 /* Main.storyboard */,
 				5380564C25A2631A0064CA75 /* Assets.xcassets */,
 				5380564E25A2631A0064CA75 /* LaunchScreen.storyboard */,
 				5380565125A2631A0064CA75 /* Info.plist */,
@@ -128,6 +168,90 @@
 			path = robookUITests;
 			sourceTree = "<group>";
 		};
+		5380568025A263E30064CA75 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				538056C225A2671C0064CA75 /* Helpers */,
+				538056A525A265F80064CA75 /* Common */,
+				5380569425A2650C0064CA75 /* Data */,
+				5380568125A263EB0064CA75 /* Login */,
+				538056A025A265990064CA75 /* AppConstants.swift */,
+				538056DF25A269380064CA75 /* APIConstants.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		5380568125A263EB0064CA75 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				5380568525A264060064CA75 /* LoginViewController.swift */,
+				5380568A25A2640E0064CA75 /* LoginPresenter.swift */,
+				5380568F25A264160064CA75 /* Login.storyboard */,
+				538056DA25A268F00064CA75 /* LoginService.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		5380569425A2650C0064CA75 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				5380569A25A2654A0064CA75 /* Remote */,
+				5380569525A265260064CA75 /* UserDefaultsManager.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		5380569A25A2654A0064CA75 /* Remote */ = {
+			isa = PBXGroup;
+			children = (
+				5380569B25A265530064CA75 /* User.swift */,
+			);
+			path = Remote;
+			sourceTree = "<group>";
+		};
+		538056A525A265F80064CA75 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				538056A625A265FF0064CA75 /* Extensions.swift */,
+				538056B625A2664F0064CA75 /* UINavigationBarGradientView.swift */,
+				538056CB25A268000064CA75 /* BaseViewController.swift */,
+				538056D025A268A10064CA75 /* BaseViewDelegate.swift */,
+				538056D525A268C60064CA75 /* Validation.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		538056C225A2671C0064CA75 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				538056C325A267260064CA75 /* NavigationHelper.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		7F8EFC5BFD68402F76E1023E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DE801AC98DC0955035075612 /* Pods-robook.debug.xcconfig */,
+				D33947FDBE0A971E172ADAE4 /* Pods-robook.release.xcconfig */,
+				E2FB5A73B26CBF223156EF86 /* Pods-robook-robookUITests.debug.xcconfig */,
+				B760835A21538255B9D9F3E5 /* Pods-robook-robookUITests.release.xcconfig */,
+				76CA43C020E85EA14F7F5D23 /* Pods-robookTests.debug.xcconfig */,
+				8688816A0406EB6A6BB2BDAC /* Pods-robookTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C5159406F41F2CC185A854A9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B769112CC425943F96E98AAA /* Pods_robook.framework */,
+				9FFDB6A43A207422F6173286 /* Pods_robook_robookUITests.framework */,
+				BABC236BDA6CA31C24984653 /* Pods_robookTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +259,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5380566A25A2631B0064CA75 /* Build configuration list for PBXNativeTarget "robook" */;
 			buildPhases = (
+				D45A566A45524E532BEDFD60 /* [CP] Check Pods Manifest.lock */,
 				5380563C25A263170064CA75 /* Sources */,
 				5380563D25A263170064CA75 /* Frameworks */,
 				5380563E25A263170064CA75 /* Resources */,
+				3049B674F84CF786A09BD751 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +278,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5380566D25A2631B0064CA75 /* Build configuration list for PBXNativeTarget "robookTests" */;
 			buildPhases = (
+				CB02624E184EA7F3F476AA30 /* [CP] Check Pods Manifest.lock */,
 				5380565225A2631A0064CA75 /* Sources */,
 				5380565325A2631A0064CA75 /* Frameworks */,
 				5380565425A2631A0064CA75 /* Resources */,
@@ -170,9 +297,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5380567025A2631B0064CA75 /* Build configuration list for PBXNativeTarget "robookUITests" */;
 			buildPhases = (
+				8263A0BDDC9B01C113F2168A /* [CP] Check Pods Manifest.lock */,
 				5380565D25A2631B0064CA75 /* Sources */,
 				5380565E25A2631B0064CA75 /* Frameworks */,
 				5380565F25A2631B0064CA75 /* Resources */,
+				553D90C8DFF0A6A33D27850C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -233,7 +362,7 @@
 			files = (
 				5380565025A2631A0064CA75 /* LaunchScreen.storyboard in Resources */,
 				5380564D25A2631A0064CA75 /* Assets.xcassets in Resources */,
-				5380564B25A263170064CA75 /* Main.storyboard in Resources */,
+				5380569025A264160064CA75 /* Login.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,14 +382,129 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3049B674F84CF786A09BD751 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-robook/Pods-robook-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-robook/Pods-robook-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-robook/Pods-robook-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		553D90C8DFF0A6A33D27850C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-robook-robookUITests/Pods-robook-robookUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-robook-robookUITests/Pods-robook-robookUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-robook-robookUITests/Pods-robook-robookUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8263A0BDDC9B01C113F2168A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-robook-robookUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CB02624E184EA7F3F476AA30 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-robookTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D45A566A45524E532BEDFD60 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-robook-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		5380563C25A263170064CA75 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5380564825A263170064CA75 /* ViewController.swift in Sources */,
+				5380568B25A2640E0064CA75 /* LoginPresenter.swift in Sources */,
+				5380569625A265260064CA75 /* UserDefaultsManager.swift in Sources */,
+				538056CC25A268000064CA75 /* BaseViewController.swift in Sources */,
+				5380569C25A265530064CA75 /* User.swift in Sources */,
+				538056D625A268C60064CA75 /* Validation.swift in Sources */,
+				538056A725A265FF0064CA75 /* Extensions.swift in Sources */,
+				538056B725A2664F0064CA75 /* UINavigationBarGradientView.swift in Sources */,
+				538056D125A268A10064CA75 /* BaseViewDelegate.swift in Sources */,
+				5380568625A264060064CA75 /* LoginViewController.swift in Sources */,
+				538056A125A265990064CA75 /* AppConstants.swift in Sources */,
 				5380564425A263170064CA75 /* AppDelegate.swift in Sources */,
+				538056E025A269380064CA75 /* APIConstants.swift in Sources */,
 				5380564625A263170064CA75 /* SceneDelegate.swift in Sources */,
+				538056C425A267260064CA75 /* NavigationHelper.swift in Sources */,
+				538056DB25A268F00064CA75 /* LoginService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,14 +540,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		5380564925A263170064CA75 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5380564A25A263170064CA75 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		5380564E25A2631A0064CA75 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -433,6 +669,7 @@
 		};
 		5380566B25A2631B0064CA75 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DE801AC98DC0955035075612 /* Pods-robook.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -452,6 +689,7 @@
 		};
 		5380566C25A2631B0064CA75 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D33947FDBE0A971E172ADAE4 /* Pods-robook.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -471,6 +709,7 @@
 		};
 		5380566E25A2631B0064CA75 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 76CA43C020E85EA14F7F5D23 /* Pods-robookTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -493,6 +732,7 @@
 		};
 		5380566F25A2631B0064CA75 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8688816A0406EB6A6BB2BDAC /* Pods-robookTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -515,6 +755,7 @@
 		};
 		5380567125A2631B0064CA75 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E2FB5A73B26CBF223156EF86 /* Pods-robook-robookUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -535,6 +776,7 @@
 		};
 		5380567225A2631B0064CA75 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B760835A21538255B9D9F3E5 /* Pods-robook-robookUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

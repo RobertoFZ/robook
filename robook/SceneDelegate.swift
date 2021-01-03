@@ -16,7 +16,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
-        guard let _ = (scene as? UIWindowScene) else { return }
+        guard let windowScene = (scene as? UIWindowScene) else { return }
+        setupMainViewController(windowScene: windowScene)
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
@@ -50,3 +51,27 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
 }
 
+extension SceneDelegate {
+    func setupMainViewController(windowScene: UIWindowScene){
+        var storyboardName: String = ""
+        var viewControllerName: String = ""
+    print("PASOOO")
+        if let _ = UserDefaultsManager.retrieveToken() {
+            NSLog("User logged in")
+            storyboardName = Storyboard.Home.rawValue
+            viewControllerName = NavigationControllers.HomeViewController.rawValue
+        }else{
+            storyboardName = Storyboard.Login.rawValue
+            viewControllerName = NavigationControllers.LoginViewController.rawValue
+        }
+        
+        self.window = UIWindow(windowScene: windowScene)
+        //self.window =  UIWindow(frame: UIScreen.main.bounds)
+
+        let storyboard = UIStoryboard(name: storyboardName, bundle: nil)
+        let rootVC = storyboard.instantiateViewController(identifier: viewControllerName)
+        let rootNC = UINavigationController(rootViewController: rootVC)
+        self.window?.rootViewController = rootNC
+        self.window?.makeKeyAndVisible()
+    }
+}
